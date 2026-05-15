@@ -1,1 +1,82 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر المستقبل للإلكترونيات</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 { color: #2c3e50; margin-bottom: 30px; }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 280px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 15px;
+        }
+        .product-card h3 { font-size: 1.2em; color: #333; height: 50px; }
+        .price { color: #e74c3c; font-weight: bold; font-size: 1.3em; display: block; margin: 15px 0; }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+        }
+        button:hover { background-color: #219150; }
+    </style>
+</head>
+<body>
+
+    <h1>مرحباً بك في متجر المستقبل</h1>
+
+    <div class="container">
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51IOn-PZ86L._AC_SL1500_.jpg" alt="TP-Link AX55 Pro">
+            <h3>راوتر تبلنك AX55 برو (Archer AX55 Pro)</h3>
+            <span class="price">حدد السعر هنا</span>
+            <button>أضف للسلة</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://consumer.huawei.com/content/dam/huawei-cbe/me-east/sa/accessories/ax3-quad-core/appearance/ax3-white.png" alt="Huawei Router">
+            <h3>راوتر هواوي ضوئي (WiFi 6)</h3>
+            <span class="price">حدد السعر هنا</span>
+            <button>أضف للسلة</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51rD6p8T37L._AC_SL1000_.jpg" alt="BlueStorm UPS">
+            <h3>UPS راوتر بلوستورم (BlueStorm)</h3>
+            <span class="price">حدد السعر هنا</span>
+            <button>أضف للسلة</button>
+        </div>
+    </div>
+
+</body>
+</html>
