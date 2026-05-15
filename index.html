@@ -3,45 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر شمس المستقبل</title>
+    <title>شمس المستقبل - SUN THE FUTUER</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; text-align: center; }
-        .header { background: #2c3e50; color: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; }
-        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .card { background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; padding: 15px; transition: 0.3s; }
-        .card:hover { transform: scale(1.05); }
-        .card img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
-        .price { color: #e74c3c; font-size: 1.2em; font-weight: bold; display: block; margin: 10px 0; }
-        .btn-whatsapp { background-color: #25D366; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; display: block; font-weight: bold; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a1a; color: white; margin: 0; padding: 20px; }
+        .header { background: linear-gradient(45deg, #ff8c00, #ff4500); padding: 30px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 1200px; margin: auto; }
+        .card { background: #2d2d2d; border-radius: 20px; overflow: hidden; border: 1px solid #444; transition: 0.3s; position: relative; }
+        .card:hover { transform: translateY(-10px); border-color: #ff8c00; }
+        .card img { width: 100%; height: 280px; object-fit: cover; }
+        .card-info { padding: 20px; }
+        .card-info h3 { margin: 0 0 10px 0; color: #ff8c00; font-size: 1.4em; }
+        .card-info p { color: #ccc; font-size: 0.9em; margin-bottom: 20px; }
+        .price { display: block; font-size: 1.3em; font-weight: bold; margin-bottom: 15px; color: #fff; }
+        .btn-buy { background: #25D366; color: white; text-decoration: none; padding: 12px; border-radius: 10px; display: block; font-weight: bold; transition: 0.3s; text-align: center; }
+        .btn-buy:hover { background: #128C7E; }
     </style>
 </head>
 <body>
 
     <div class="header">
         <h1>شمس المستقبل (SUN THE FUTUER)</h1>
-        <p>أحدث أجهزة الراوتر والـ UPS وملحقات الشبكات</p>
+        <p>التميز في أجهزة الشبكات والـ UPS</p>
     </div>
 
     <div class="container">
         <div class="card">
-            <img src="ضع_رابط_الصورة_هنا" alt="TP-Link AX55 PRO">
-            <h3>TP-Link AX55-PRO</h3>
-            <span class="price">السعر: راسلنا للتفاصيل</span>
-            <a href="https://wa.me/9647733336103?text=اريد%20استفسار%20عن%20راوتر%20تبلنك%20AX55" class="btn-whatsapp">طلب عبر واتساب</a>
+            <img src="huawei_ax3.jpg" alt="Huawei WiFi-6 AX3">
+            <div class="card-info">
+                <h3>HUAWEI WiFi-6 AX3</h3>
+                <p>راوتر هواوي الجيل السادس، سرعة فائقة وتغطية ممتازة.</p>
+                <span class="price">اتصل للسعر</span>
+                <a href="https://wa.me/9647733336103?text=أريد%20استفسار%20عن%20راوتر%20هواوي%20AX3" class="btn-buy">طلب عبر واتساب</a>
+            </div>
         </div>
 
         <div class="card">
-            <img src="ضع_رابط_الصورة_هنا" alt="Huawei AX3">
-            <h3>Huawei WiFi-6 AX3</h3>
-            <span class="price">السعر: راسلنا للتفاصيل</span>
-            <a href="https://wa.me/9647733336103?text=اريد%20استفسار%20عن%20راوتر%20هواوي%20AX3" class="btn-whatsapp">طلب عبر واتساب</a>
+            <img src="tplink_ax55.jpg" alt="TP-Link AX55 PRO">
+            <div class="card-info">
+                <h3>TP-Link AX55-PRO</h3>
+                <p>أداء احترافي للألعاب والبث المباشر بفضل تقنية AX3000.</p>
+                <span class="price">اتصل للسعر</span>
+                <a href="https://wa.me/9647733336103?text=أريد%20استفسار%20عن%20راوتر%20تبلنك%20AX55" class="btn-buy">طلب عبر واتساب</a>
+            </div>
         </div>
 
         <div class="card">
-            <img src="ضع_رابط_الصورة_هنا" alt="BlueStorm UPS">
-            <h3>BlueStorm UPS-CAMERA</h3>
-            <span class="price">10A - 17600mAh</span>
-            <a href="https://wa.me/9647733336103?text=اريد%20طلب%20UPS%20بلوستورم" class="btn-whatsapp">طلب عبر واتساب</a>
+            <img src="bluestorm_ups.jpg" alt="BlueStorm UPS">
+            <div class="card-info">
+                <h3>BlueStorm UPS-CAMERA</h3>
+                <p>قوة 10A وسعة 17600mAh، مثالي للكاميرات والراوترات.</p>
+                <span class="price">اتصل للسعر</span>
+                <a href="https://wa.me/9647733336103?text=أريد%20طلب%20UPS%20بلوستورم" class="btn-buy">طلب عبر واتساب</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="cat6_cable.jpg" alt="SFTP CAT6 Cable">
+            <div class="card-info">
+                <h3>SFTP-CAT6 (30M - 50M)</h3>
+                <p>كابل شبكة محمي عالي الجودة لنقل البيانات بسرعة وثبات.</p>
+                <span class="price">متوفر بأطوال مختلفة</span>
+                <a href="https://wa.me/9647733336103?text=أريد%20استفسار%20عن%20كابلات%20CAT6" class="btn-buy">طلب عبر واتساب</a>
+            </div>
         </div>
     </div>
 
