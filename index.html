@@ -3,88 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر المستقبل للإلكترونيات</title>
+    <title>متجر شمس المستقبل</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 { color: #1a73e8; margin-bottom: 30px; }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-        }
-        .product-card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-            width: 300px;
-            padding: 20px;
-            transition: transform 0.3s ease;
-            border: 1px solid #e0e0e0;
-        }
-        .product-card:hover { transform: translateY(-10px); }
-        .product-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: contain;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-        .product-card h3 { font-size: 1.1em; color: #333; height: 50px; margin: 10px 0; }
-        .price { color: #d93025; font-weight: bold; font-size: 1.4em; display: block; margin-bottom: 20px; }
-        .btn-whatsapp {
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            padding: 14px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .btn-whatsapp:hover { background-color: #128C7E; }
-        .btn-whatsapp i { margin-left: 8px; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; text-align: center; }
+        .header { background: #2c3e50; color: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .card { background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; padding: 15px; transition: 0.3s; }
+        .card:hover { transform: scale(1.05); }
+        .card img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
+        .price { color: #e74c3c; font-size: 1.2em; font-weight: bold; display: block; margin: 10px 0; }
+        .btn-whatsapp { background-color: #25D366; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; display: block; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <h1>مرحباً بك في متجر المستقبل</h1>
+    <div class="header">
+        <h1>شمس المستقبل (SUN THE FUTUER)</h1>
+        <p>أحدث أجهزة الراوتر والـ UPS وملحقات الشبكات</p>
+    </div>
 
     <div class="container">
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/51IOn-PZ86L._AC_SL1500_.jpg" alt="TP-Link AX55 Pro">
-            <h3>راوتر تبلنك AX55 برو (Archer AX55 Pro)</h3>
-            <span class="price">السعر: اتصل بنا</span>
-            <a href="https://wa.me/9647733336103?text=السلام%20عليكم%20اريد%20طلب%20راوتر%20تبلنك%20AX55%20برو" class="btn-whatsapp" target="_blank">
-                طلب عبر واتساب
-            </a>
+        <div class="card">
+            <img src="ضع_رابط_الصورة_هنا" alt="TP-Link AX55 PRO">
+            <h3>TP-Link AX55-PRO</h3>
+            <span class="price">السعر: راسلنا للتفاصيل</span>
+            <a href="https://wa.me/9647733336103?text=اريد%20استفسار%20عن%20راوتر%20تبلنك%20AX55" class="btn-whatsapp">طلب عبر واتساب</a>
         </div>
 
-        <div class="product-card">
-            <img src="https://consumer.huawei.com/content/dam/huawei-cbe/me-east/sa/accessories/ax3-quad-core/appearance/ax3-white.png" alt="Huawei Router">
-            <h3>راوتر هواوي ضوئي (WiFi 6)</h3>
-            <span class="price">السعر: اتصل بنا</span>
-            <a href="https://wa.me/9647733336103?text=السلام%20عليكم%20اريد%20طلب%20راوتر%20هواوي%20ضوئي" class="btn-whatsapp" target="_blank">
-                طلب عبر واتساب
-            </a>
+        <div class="card">
+            <img src="ضع_رابط_الصورة_هنا" alt="Huawei AX3">
+            <h3>Huawei WiFi-6 AX3</h3>
+            <span class="price">السعر: راسلنا للتفاصيل</span>
+            <a href="https://wa.me/9647733336103?text=اريد%20استفسار%20عن%20راوتر%20هواوي%20AX3" class="btn-whatsapp">طلب عبر واتساب</a>
         </div>
 
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/51rD6p8T37L._AC_SL1000_.jpg" alt="BlueStorm UPS">
-            <h3>UPS راوتر بلوستورم (BlueStorm)</h3>
-            <span class="price">السعر: اتصل بنا</span>
-            <a href="https://wa.me/9647733336103?text=السلام%20عليكم%20اريد%20طلب%20UPS%20راوتر%20بلوستورم" class="btn-whatsapp" target="_blank">
-                طلب عبر واتساب
-            </a>
+        <div class="card">
+            <img src="ضع_رابط_الصورة_هنا" alt="BlueStorm UPS">
+            <h3>BlueStorm UPS-CAMERA</h3>
+            <span class="price">10A - 17600mAh</span>
+            <a href="https://wa.me/9647733336103?text=اريد%20طلب%20UPS%20بلوستورم" class="btn-whatsapp">طلب عبر واتساب</a>
         </div>
     </div>
 
